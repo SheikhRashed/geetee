@@ -41,4 +41,254 @@ button {
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.header .nav-item select, .header .nav-link {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  display: inline-block;
+  text-transform: capitalize;
+  background-color: #ff0020;
+  padding: 11px 21px !important;
+  box-shadow: 0px 4px 20px 0px #ff00201a;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  position: fixed;
+}
+
+.header.sticky .navbar {
+  padding: 14px 0px;
+  box-shadow: 0px 4px 20px 0px #0000000d;
+}
+
+.header .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+@media (max-width: 991px) {
+  .header .dropdown-menu {
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
+}
+
+.header .dropdown-item {
+  color: #747474;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: right;
+  font-weight: 500;
+}
+
+@media (max-width: 991px) {
+  .header .dropdown-item {
+    padding: 4px 0px;
+  }
+}
+
+.header .dropdown-item:hover {
+  color: #fff;
+  background-color: #ff0020;
+}
+
+@media (max-width: 991px) {
+  .header .dropdown-item:hover {
+    color: inherit;
+    background-color: transparent;
+  }
+}
+
+.header .navbar {
+  padding: 28px 0px;
+  background-color: #fff;
+  transition: all 0.3s linear;
+}
+
+@media (max-width: 991px) {
+  .header .navbar {
+    box-shadow: 0px 4px 20px 0px #0000000d;
+  }
+}
+
+@media (max-width: 991px) {
+  .header .navbar {
+    padding: 13px 0px;
+  }
+}
+
+.header .navbar-nav {
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .header .navbar-nav {
+    align-items: flex-end;
+  }
+}
+
+@media (max-width: 575px) {
+  .header .navbar-nav {
+    top: 100%;
+    right: 12px;
+    width: 188px;
+    margin-left: auto;
+    position: absolute;
+    padding: 18px 30px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px 0px #0000001a;
+  }
+}
+
+@media (max-width: 575px) {
+  .header .navbar-nav {
+    right: 12px;
+  }
+}
+
+.header .navbar-toggler {
+  border: 0;
+  padding: 0px;
+  border-radius: 0px;
+  transform: rotate(90deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.header .navbar-toggler.collapsed {
+  transform: rotate(0deg);
+}
+
+.header .navbar-toggler:focus, .header .navbar-toggler:active {
+  border: 0px;
+  outline: none;
+  box-shadow: none;
+}
+
+.header .navbar-brand {
+  padding: 0;
+}
+
+.header .nav-item {
+  margin-right: 48px;
+}
+
+@media (max-width: 991px) {
+  .header .nav-item {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+}
+
+.header .nav-item select {
+  border: 0;
+  padding: 0;
+  color: #ff0020;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  .header .nav-item select {
+    margin-left: -24px;
+  }
+}
+
+.header .nav-item select:focus {
+  outline: none;
+}
+
+@media (max-width: 991px) {
+  .header .nav-item:nth-last-child(2) {
+    width: 100%;
+    padding-top: 24px;
+  }
+}
+
+@media (max-width: 575px) {
+  .header .nav-item:nth-last-child(2) {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header .nav-item:nth-last-child(1) {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.header .nav-link {
+  color: #333333;
+  font-weight: 700;
+  padding: 0 !important;
+  transition: all 0.3s linear;
+}
+
+@media (max-width: 991px) {
+  .header .nav-link {
+    text-align: right;
+  }
+}
+
+.header .nav-link:hover {
+  color: #ff0020;
+}
+
+.header .nav-link:hover.dropdown-toggle::after {
+  border-color: #ff0020;
+}
+
+.header .nav-link.dropdown-toggle.show {
+  color: #ff0020;
+}
+
+.header .nav-link.dropdown-toggle.show::after {
+  border-color: #ff0020;
+  transform: rotate(-138deg);
+}
+
+.header .nav-link.dropdown-toggle::after {
+  content: "";
+  padding: 3px;
+  margin-left: 5px;
+  vertical-align: 3px;
+  display: inline-block;
+  display: inline-block;
+  border: solid #333333;
+  transform: rotate(45deg);
+  transition: all 0.3s linear;
+  border-width: 0 2.6px 2.6px 0;
+}
+
+.header .nav-link.button {
+  width: 108px;
+  height: 45px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 991px) {
+  .header .nav-link.button {
+    height: 28px;
+    margin: auto;
+    padding: 7px 20px !important;
+  }
+}
 /*# sourceMappingURL=main.css.map */
