@@ -1,0 +1,183 @@
+.footer {
+	overflow: hidden;
+	position: relative;
+	background-color: #f6f6f6;
+
+	&-top {
+		padding: 50px 0px;
+		padding-bottom: 45px;
+		border-bottom: 2px solid #d9d9d9;
+
+		&-subscribe {
+			display: flex;
+			margin-top: 50px;
+			align-items: flex-end;
+			justify-content: space-between;
+
+			@include max(991px) {
+				margin-top: 16px;
+				flex-direction: column;
+				align-items: flex-start;
+			}
+
+			ul {
+				display: flex;
+				align-items: center;
+
+				li {
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+
+	&-bottom {
+		padding-top: 22px;
+		padding-bottom: 34px;
+
+		p {
+			font-size: 16px;
+			color: #333333;
+			line-height: 24px;
+			text-align: center;
+			text-transform: capitalize;
+		}
+	}
+
+	&-info {
+		@include max(991px) {
+			margin-bottom: 28px;
+		}
+
+		.logo {
+			margin-bottom: 18px;
+		}
+
+		p {
+			font-size: 16px;
+			color: #747474;
+			line-height: 24px;
+			margin-bottom: 30px;
+
+			@include max(575px) {
+				font-size: 10px;
+				line-height: 15px;
+			}
+		}
+
+		ul {
+			display: flex;
+			align-items: center;
+			li {
+				margin-right: 20px;
+			}
+		}
+	}
+
+	&-menu {
+		@include max(991px) {
+			margin-bottom: 38px;
+		}
+
+		@include max(767px) {
+			margin-bottom: 24px;
+		}
+
+		h2 {
+			@extend %fs-2;
+			color: #333333;
+			margin-bottom: 20px;
+			font-family: "nulshock";
+
+			@include max(575px) {
+				font-size: 12px;
+				line-height: 14.4px;
+				margin-bottom: 15px;
+			}
+		}
+
+		ul {
+			li {
+				margin-bottom: 5px;
+
+				@include max(575px) {
+					margin-bottom: 4px;
+				}
+
+				a,
+				p {
+					font-size: 16px;
+					color: #747474;
+					line-height: 24px;
+					transition: all 0.3s linear;
+
+					@include max(575px) {
+						font-size: 10px;
+						line-height: 15px;
+					}
+
+					&:hover {
+						color: #333333;
+					}
+
+					span {
+						margin-right: 16px;
+					}
+				}
+
+				p {
+					display: flex;
+					align-items: center;
+				}
+			}
+		}
+	}
+
+	&-field {
+		@include max(991px) {
+			margin-top: 40px;
+		}
+
+		@include max(767px) {
+			width: 100%;
+		}
+
+		h2 {
+			font-size: 20px;
+			color: #333333;
+			line-height: 24px;
+			margin-bottom: 16px;
+			font-family: "nulshock";
+
+			@include max(575px) {
+				font-size: 12px;
+				line-height: 14.4px;
+				margin-bottom: 9px;
+			}
+		}
+
+		.input-field {
+			@include max(767px) {
+				width: 100%;
+			}
+
+			input {
+				@include max(575px) {
+					font-size: 10px;
+					padding: 11px 12px;
+					line-height: 13.05px;
+				}
+			}
+
+			button {
+				@include max(575px) {
+					font-size: 9px;
+					line-height: 13.5px;
+					width: 75px;
+					height: 24px;
+					padding: 5px 18px !important;
+				}
+			}
+		}
+	}
+}

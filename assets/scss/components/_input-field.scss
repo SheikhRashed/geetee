@@ -1,0 +1,28 @@
+.input-field {
+	width: 565px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 5px;
+	background-color: #fff;
+	border: 1px solid #d9d9d9;
+
+	input {
+		width: 100%;
+		font-size: 14px;
+		line-height: 19.07px;
+		padding: 24px 25px;
+
+		&::placeholder {
+			color: #747474;
+		}
+	}
+
+	button {
+		top: 50%;
+		width: 138px;
+		height: 43px;
+		right: 10px;
+		position: absolute;
+		transform: translateY(-50%);
+	}
+}

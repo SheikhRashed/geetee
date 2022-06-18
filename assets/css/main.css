@@ -12,7 +12,9 @@ h5,
 h6,
 ul,
 ol,
-li {
+li,
+p {
+  padding: 0;
   margin: 0;
 }
 
@@ -38,13 +40,23 @@ button {
   background-color: transparent;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
+  font-weight: 400;
   font-family: "Poppins", sans-serif;
 }
 
 .header .nav-item select, .header .nav-link {
   font-size: 14px;
   line-height: 21px;
+}
+
+.footer-menu h2 {
+  font-size: 18px;
+  line-height: 21.6px;
 }
 
 .button {
@@ -57,6 +69,236 @@ body {
   background-color: #ff0020;
   padding: 11px 21px !important;
   box-shadow: 0px 4px 20px 0px #ff00201a;
+}
+
+.input-field {
+  width: 565px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+}
+
+.input-field input {
+  width: 100%;
+  font-size: 14px;
+  line-height: 19.07px;
+  padding: 24px 25px;
+}
+
+.input-field input::placeholder {
+  color: #747474;
+}
+
+.input-field button {
+  top: 50%;
+  width: 138px;
+  height: 43px;
+  right: 10px;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.footer {
+  overflow: hidden;
+  position: relative;
+  background-color: #f6f6f6;
+}
+
+.footer-top {
+  padding: 50px 0px;
+  padding-bottom: 45px;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.footer-top-subscribe {
+  display: flex;
+  margin-top: 50px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .footer-top-subscribe {
+    margin-top: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.footer-top-subscribe ul {
+  display: flex;
+  align-items: center;
+}
+
+.footer-top-subscribe ul li {
+  margin-right: 20px;
+}
+
+.footer-bottom {
+  padding-top: 22px;
+  padding-bottom: 34px;
+}
+
+.footer-bottom p {
+  font-size: 16px;
+  color: #333333;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+@media (max-width: 991px) {
+  .footer-info {
+    margin-bottom: 28px;
+  }
+}
+
+.footer-info .logo {
+  margin-bottom: 18px;
+}
+
+.footer-info p {
+  font-size: 16px;
+  color: #747474;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 575px) {
+  .footer-info p {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+
+.footer-info ul {
+  display: flex;
+  align-items: center;
+}
+
+.footer-info ul li {
+  margin-right: 20px;
+}
+
+@media (max-width: 991px) {
+  .footer-menu {
+    margin-bottom: 38px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-menu {
+    margin-bottom: 24px;
+  }
+}
+
+.footer-menu h2 {
+  color: #333333;
+  margin-bottom: 20px;
+  font-family: "nulshock";
+}
+
+@media (max-width: 575px) {
+  .footer-menu h2 {
+    font-size: 12px;
+    line-height: 14.4px;
+    margin-bottom: 15px;
+  }
+}
+
+.footer-menu ul li {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 575px) {
+  .footer-menu ul li {
+    margin-bottom: 4px;
+  }
+}
+
+.footer-menu ul li a,
+.footer-menu ul li p {
+  font-size: 16px;
+  color: #747474;
+  line-height: 24px;
+  transition: all 0.3s linear;
+}
+
+@media (max-width: 575px) {
+  .footer-menu ul li a,
+  .footer-menu ul li p {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+
+.footer-menu ul li a:hover,
+.footer-menu ul li p:hover {
+  color: #333333;
+}
+
+.footer-menu ul li a span,
+.footer-menu ul li p span {
+  margin-right: 16px;
+}
+
+.footer-menu ul li p {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .footer-field {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-field {
+    width: 100%;
+  }
+}
+
+.footer-field h2 {
+  font-size: 20px;
+  color: #333333;
+  line-height: 24px;
+  margin-bottom: 16px;
+  font-family: "nulshock";
+}
+
+@media (max-width: 575px) {
+  .footer-field h2 {
+    font-size: 12px;
+    line-height: 14.4px;
+    margin-bottom: 9px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-field .input-field {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-field .input-field input {
+    font-size: 10px;
+    padding: 11px 12px;
+    line-height: 13.05px;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-field .input-field button {
+    font-size: 9px;
+    line-height: 13.5px;
+    width: 75px;
+    height: 24px;
+    padding: 5px 18px !important;
+  }
 }
 
 .header {
