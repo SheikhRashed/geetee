@@ -1,0 +1,11 @@
+%heading {
+	color: #1d1d1d;
+	font-size: 40px;
+	line-height: 48px;
+	font-family: "nulshock";
+
+	@include max(767px) {
+		font-size: 25px;
+		line-height: 30px;
+	}
+}

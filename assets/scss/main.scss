@@ -1,8 +1,20 @@
 // Abstracts
 @import "abstracts/variable";
-@import "abstracts/placeholder";
 @import "abstracts/functions";
 @import "abstracts/reset";
+@import "abstracts/placeholder";
 
 // component
 @import "components/button";
+@import "components/cards";
+
+// Layouts
+@import "layouts/about";
+@import "layouts/banner";
+@import "layouts/contact";
+@import "layouts/footer";
+@import "layouts/header";
+@import "layouts/instagram";
+@import "layouts/products";
+@import "layouts/team";
+@import "layouts/testimonial";
