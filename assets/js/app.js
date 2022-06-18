@@ -21,7 +21,35 @@ if (navbar) {
 }
 
 // Get Year
-
 const d = new Date()
 let year = d.getFullYear()
 document.getElementById("year").innerHTML = year
+
+if (document.querySelector(".post-slider")) {
+	var swiper = new Swiper(".post-slider", {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		loop: true,
+		autoplay: {
+			delay: 1800,
+			disableOnInteraction: false,
+		},
+		centeredSlides: true,
+		breakpoints: {
+			480: {
+				slidesPerView: 2,
+				centeredSlides: false,
+			},
+			640: {
+				slidesPerView: 3,
+			},
+
+			991: {
+				slidesPerView: 4,
+			},
+			1200: {
+				slidesPerView: 6,
+			},
+		},
+	})
+}

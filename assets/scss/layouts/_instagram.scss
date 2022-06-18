@@ -1,0 +1,26 @@
+.instagram {
+	position: relative;
+	padding-top: 140px;
+	.heading {
+		text-align: center;
+		margin-bottom: 55px;
+
+		@include max(767px) {
+			margin-bottom: 30px;
+		}
+
+		h2 {
+			@extend %heading;
+		}
+		p {
+			@extend %fs-2;
+			color: $primary;
+			font-weight: 700;
+
+			@include max(767px) {
+				font-size: 16px;
+				line-height: 22.4px;
+			}
+		}
+	}
+}
