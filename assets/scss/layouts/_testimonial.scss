@@ -1,0 +1,104 @@
+.testimonial {
+	padding: 80px 0px;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 0px;
+
+	&-content {
+		margin: 0px auto;
+		text-align: center;
+
+		blockquote {
+			margin: 0;
+
+			p {
+				margin: auto;
+				color: #fff;
+				font-size: 20px;
+				max-width: 640px;
+				line-height: 28px;
+				padding-bottom: 60px;
+
+				@include max(991px) {
+					padding-bottom: 30px;
+				}
+
+				@include max(767px) {
+					font-size: 12px;
+					line-height: 18px;
+					max-width: 275px;
+				}
+			}
+		}
+
+		.user {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			.img {
+				width: 35px;
+				height: 35px;
+				overflow: hidden;
+				position: relative;
+				margin-right: 24px;
+				border: 0.87px solid #ffffff;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+			h2 {
+				color: #fff;
+				font-size: 20px;
+				line-height: 24px;
+				font-family: "nulshock";
+				text-transform: uppercase;
+
+				@include max(991px) {
+					font-size: 15px;
+					line-height: 18px;
+				}
+			}
+		}
+	}
+
+	.swiper {
+		padding: 80px 0px;
+
+		@include max(991px) {
+			padding: 40px 0px;
+			padding-bottom: 85px;
+		}
+
+		&-pagination {
+			bottom: 20px;
+			left: auto;
+			right: 55px;
+			text-align: end;
+
+			@include max(991px) {
+				right: 50%;
+				text-align: center;
+				transform: translateX(50%);
+			}
+
+			&-bullet {
+				opacity: 1;
+				width: 16px;
+				height: 16px;
+				border-radius: 0px;
+				margin: 0px !important;
+				margin-right: 3px !important;
+				background-color: #fff;
+
+				&-active {
+					background-color: $primary;
+				}
+			}
+		}
+	}
+}

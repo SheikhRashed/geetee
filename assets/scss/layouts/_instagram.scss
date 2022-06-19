@@ -1,6 +1,11 @@
 .instagram {
 	position: relative;
 	padding-top: 140px;
+
+	@include max(991px) {
+		padding-top: 60px;
+	}
+
 	.heading {
 		text-align: center;
 		margin-bottom: 55px;

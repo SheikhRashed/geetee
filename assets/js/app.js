@@ -53,3 +53,35 @@ if (document.querySelector(".post-slider")) {
 		},
 	})
 }
+
+if (document.querySelector(".testomonial-slider")) {
+	var swiper = new Swiper(".testomonial-slider", {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		pagination: {
+			el: ".swiper-pagination",
+		},
+		// loop: true,
+		// autoplay: {
+		// 	delay: 1800,
+		// 	disableOnInteraction: false,
+		// },
+		// centeredSlides: true,
+		// breakpoints: {
+		// 	480: {
+		// 		slidesPerView: 2,
+		// 		centeredSlides: false,
+		// 	},
+		// 	640: {
+		// 		slidesPerView: 3,
+		// 	},
+
+		// 	991: {
+		// 		slidesPerView: 4,
+		// 	},
+		// 	1200: {
+		// 		slidesPerView: 6,
+		// 	},
+		// },
+	})
+}

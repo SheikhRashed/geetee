@@ -1,0 +1,108 @@
+.product {
+	overflow: hidden;
+	padding: 80px 0px;
+	position: relative;
+
+	.heading {
+		text-align: center;
+		margin-bottom: 80px;
+
+		h2 {
+			@extend %heading;
+			margin-bottom: 16px;
+		}
+
+		p {
+			max-width: 780px;
+			margin: 0px auto;
+
+			@include max(991px) {
+				max-width: 100%;
+			}
+
+			// @include max;
+		}
+	}
+
+	&-content {
+		@include max(991px) {
+			margin-bottom: 60px;
+		}
+	}
+
+	&-img {
+		width: 100%;
+		height: 500px;
+		overflow: hidden;
+		position: relative;
+
+		@include max(991px) {
+			height: 240px;
+			margin-bottom: 24px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&-info {
+		h2 {
+			color: $primary;
+			font-size: 30px;
+			line-height: 36px;
+			margin-bottom: 35px;
+			font-family: "nulshock";
+
+			@include max(991px) {
+				text-align: center;
+			}
+			@include max(575px) {
+				font-size: 18px;
+				line-height: 21.6px;
+				margin-bottom: 10px;
+			}
+		}
+
+		p {
+			font-size: 16px;
+			color: #747474;
+			margin-bottom: 30px;
+			line-height: 22.4px;
+
+			@include max(575px) {
+				font-size: 10px;
+				line-height: 14px;
+			}
+		}
+
+		ul {
+			gap: 24px;
+			display: grid;
+			margin-bottom: 30px;
+			grid-template-columns: repeat(2, 1fr);
+
+			li {
+				display: flex;
+				align-items: center;
+				span {
+					margin-right: 8px;
+					display: inline-block;
+				}
+
+				p {
+					margin: 0;
+				}
+			}
+		}
+
+		.button {
+			@include max(575px) {
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+}
