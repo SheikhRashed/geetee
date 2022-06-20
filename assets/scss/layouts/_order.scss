@@ -1,0 +1,37 @@
+.order {
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 0px;
+
+	&-about {
+		padding-bottom: 60px;
+		h2 {
+			font-size: 20px;
+			line-height: 24px;
+			margin-bottom: 18px;
+			font-family: "nulshock";
+		}
+
+		p {
+			color: #747474;
+			font-size: 16px;
+			line-height: 22.4px;
+		}
+	}
+	&-fields {
+		gap: 30px;
+		display: grid;
+		margin-bottom: 60px;
+		align-items: flex-end;
+		grid-template-columns: 1fr 1fr 1fr 165px;
+
+		@include max(991px) {
+			gap: 20px;
+			grid-template-columns: 1fr;
+		}
+
+		.button {
+			height: 40px;
+		}
+	}
+}

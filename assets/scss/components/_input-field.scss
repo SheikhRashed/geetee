@@ -1,9 +1,37 @@
+.input {
+	overflow: hidden;
+	position: relative;
+
+	label {
+		color: #1d1d1d;
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 8px;
+		display: inline-block;
+
+		sup {
+			color: $primary;
+		}
+	}
+	input {
+		font-size: 13px;
+		line-height: 19.5px;
+		color: #1d1d1d;
+		width: 100%;
+		padding: 10px 14px;
+		border-radius: 5px;
+		background-color: #fff;
+		border: 0.5px solid #cfcfcf;
+	}
+}
+
 .input-field {
 	width: 565px;
 	overflow: hidden;
 	position: relative;
 	border-radius: 5px;
 	background-color: #fff;
+	text-transform: capitalize;
 	border: 1px solid #d9d9d9;
 
 	input {

@@ -1,0 +1,66 @@
+.contact {
+	overflow: hidden;
+	position: relative;
+	padding: 40px 0px;
+	background-color: #f5f5f5;
+
+	@include max(767px) {
+		padding: 30px 0px;
+	}
+
+	h2 {
+		font-size: 30px;
+		line-height: 36px;
+		max-width: 616px;
+		margin-bottom: 32px;
+		font-family: "nulshock";
+
+		@include max(991px) {
+			text-align: center;
+			margin: 0px auto;
+			margin-bottom: 44px;
+		}
+
+		@include max(767px) {
+			font-size: 20px;
+			line-height: 24px;
+			max-width: 100%;
+		}
+	}
+
+	ul {
+		display: flex;
+
+		align-items: center;
+
+		@include max(991px) {
+			flex-direction: column;
+		}
+
+		li {
+			display: flex;
+			align-items: center;
+			margin-right: 100px;
+
+			@include max(991px) {
+				margin: 0px;
+				margin-bottom: 8px;
+			}
+
+			.icon {
+				margin-right: 12px;
+			}
+
+			p {
+				font-size: 16px;
+				line-height: 32px;
+				text-transform: capitalize;
+
+				span {
+					color: $primary;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}
