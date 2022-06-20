@@ -1546,6 +1546,14 @@ body {
   }
 }
 
+.header .nav-item.active .nav-link {
+  color: #ff0020;
+}
+
+.header .nav-item.active .nav-link.dropdown-toggle::after {
+  border-color: #ff0020;
+}
+
 .header .nav-link {
   color: #333333;
   font-weight: 700;

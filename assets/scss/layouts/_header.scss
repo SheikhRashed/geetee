@@ -152,6 +152,20 @@
 					justify-content: center;
 				}
 			}
+
+			&.active {
+				.nav-link {
+					color: $primary;
+
+					&.dropdown {
+						&-toggle {
+							&::after {
+								border-color: $primary;
+							}
+						}
+					}
+				}
+			}
 		}
 
 		&-link {
