@@ -196,6 +196,7 @@
 
 .order-card {
 	display: flex;
+	overflow: hidden;
 	position: relative;
 	border-radius: 5px;
 	padding: 24px 36px;
@@ -210,6 +211,7 @@
 
 	@include max(767px) {
 		padding: 22px 30px;
+		padding-bottom: 40px;
 	}
 
 	&-img {
