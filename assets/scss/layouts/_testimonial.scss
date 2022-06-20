@@ -101,4 +101,19 @@
 			}
 		}
 	}
+
+	&-action {
+		display: flex;
+		margin-top: 70px;
+		justify-content: center;
+
+		@include max(991px) {
+			margin-top: 36px;
+		}
+
+		.button {
+			width: 238px;
+			text-align: center;
+		}
+	}
 }

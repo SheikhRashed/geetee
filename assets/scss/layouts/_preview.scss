@@ -1,0 +1,37 @@
+.preview {
+	.heading {
+		font-size: 20px;
+		color: #1d1d1d;
+		line-height: 24px;
+		margin-bottom: 60px;
+		font-family: "nulshock";
+
+		@include max(991px) {
+			text-align: center;
+			margin-bottom: 10px;
+		}
+
+		@include max(575px) {
+			font-size: 15px;
+			line-height: 18px;
+		}
+	}
+
+	&-content {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
+	}
+
+	&-item {
+		width: 100%;
+		height: 234px;
+		overflow: hidden;
+		position: relative;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}

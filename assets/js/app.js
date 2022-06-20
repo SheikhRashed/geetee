@@ -61,27 +61,21 @@ if (document.querySelector(".testomonial-slider")) {
 		pagination: {
 			el: ".swiper-pagination",
 		},
-		// loop: true,
-		// autoplay: {
-		// 	delay: 1800,
-		// 	disableOnInteraction: false,
-		// },
-		// centeredSlides: true,
-		// breakpoints: {
-		// 	480: {
-		// 		slidesPerView: 2,
-		// 		centeredSlides: false,
-		// 	},
-		// 	640: {
-		// 		slidesPerView: 3,
-		// 	},
+	})
+}
 
-		// 	991: {
-		// 		slidesPerView: 4,
-		// 	},
-		// 	1200: {
-		// 		slidesPerView: 6,
-		// 	},
-		// },
+if (document.querySelector(".products-slider")) {
+	var swiper = new Swiper(".products-thumb-slider", {
+		spaceBetween: 10,
+		slidesPerView: 4,
+		freeMode: true,
+		loop: true,
+		watchSlidesProgress: true,
+	})
+	var swiper2 = new Swiper(".products-slider", {
+		spaceBetween: 10,
+		thumbs: {
+			swiper: swiper,
+		},
 	})
 }
