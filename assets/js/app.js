@@ -27,7 +27,7 @@ document.getElementById("year").innerHTML = year
 
 if (document.querySelector(".post-slider")) {
 	var swiper = new Swiper(".post-slider", {
-		slidesPerView: 1,
+		slidesPerView: 6,
 		spaceBetween: 0,
 		loop: true,
 		autoplay: {
@@ -35,22 +35,6 @@ if (document.querySelector(".post-slider")) {
 			disableOnInteraction: false,
 		},
 		centeredSlides: true,
-		breakpoints: {
-			480: {
-				slidesPerView: 2,
-				centeredSlides: false,
-			},
-			640: {
-				slidesPerView: 3,
-			},
-
-			991: {
-				slidesPerView: 4,
-			},
-			1200: {
-				slidesPerView: 6,
-			},
-		},
 	})
 }
 
@@ -58,8 +42,10 @@ if (document.querySelector(".testomonial-slider")) {
 	var swiper = new Swiper(".testomonial-slider", {
 		slidesPerView: 1,
 		spaceBetween: 0,
+		loop: true,
 		pagination: {
 			el: ".swiper-pagination",
+			clickable: true,
 		},
 	})
 }

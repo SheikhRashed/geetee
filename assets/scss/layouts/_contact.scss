@@ -30,8 +30,8 @@
 
 	ul {
 		display: flex;
-
 		align-items: center;
+		justify-content: space-between;
 
 		@include max(991px) {
 			flex-direction: column;
@@ -40,10 +40,8 @@
 		li {
 			display: flex;
 			align-items: center;
-			margin-right: 100px;
 
 			@include max(991px) {
-				margin: 0px;
 				margin-bottom: 8px;
 			}
 
@@ -54,6 +52,7 @@
 			p {
 				font-size: 16px;
 				line-height: 32px;
+				white-space: nowrap;
 				text-transform: capitalize;
 
 				span {

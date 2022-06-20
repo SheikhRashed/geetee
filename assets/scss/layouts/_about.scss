@@ -4,15 +4,20 @@
 	position: relative;
 
 	&-img {
-		width: 100%;
+		float: left;
 		height: 380px;
-		overflow: hidden;
-		position: relative;
-		padding-right: 36px;
+		margin-right: 54px;
+		margin-bottom: 20px;
 
 		@include max(991px) {
+			float: none;
 			padding: 0px;
-			margin-bottom: 24px;
+			margin: 0px;
+			margin: 24px 0px;
+		}
+
+		@include max(767px) {
+			height: 240px;
 		}
 
 		img {
@@ -29,6 +34,15 @@
 			max-width: 420px;
 			margin-bottom: 25px;
 			font-family: "nulshock";
+			position: relative;
+			left: 420px;
+
+			@include max(991px) {
+				left: auto;
+				margin: auto;
+				max-width: 100%;
+				text-align: center;
+			}
 
 			@include max(767px) {
 				font-size: 20px;

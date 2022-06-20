@@ -38,6 +38,12 @@
 					line-height: 48px;
 					margin-bottom: 18px;
 					font-family: "nulshock";
+
+					@include max(767px) {
+						font-size: 25px;
+						line-height: 30px;
+						margin-bottom: 10px;
+					}
 				}
 
 				p {
@@ -46,7 +52,16 @@
 					line-height: 22.2px;
 					max-width: 780px;
 					margin: auto;
+
+					@include max(767px) {
+						font-size: 12px;
+						line-height: 16.8px;
+					}
 				}
+			}
+
+			@include max(767px) {
+				padding: 30px 0px;
 			}
 		}
 	}
@@ -133,7 +148,6 @@
 	}
 
 	@include max(575px) {
-		// padding: 30px 0px;
 		padding-top: 140px;
 	}
 

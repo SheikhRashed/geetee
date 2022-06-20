@@ -19,7 +19,12 @@
 
 	&-content {
 		display: grid;
+		transition: all 0.3s linear;
 		grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
+
+		@include max(767px) {
+			grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+		}
 	}
 
 	&-item {
@@ -27,6 +32,10 @@
 		height: 234px;
 		overflow: hidden;
 		position: relative;
+
+		@include max(767px) {
+			height: 90px;
+		}
 
 		img {
 			width: 100%;

@@ -97,6 +97,12 @@ body {
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .ig-card {
+    height: 75px;
+  }
+}
+
 .ig-card img {
   width: 100%;
   height: 100%;
@@ -108,6 +114,12 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
+}
+
+@media (max-width: 767px) {
+  .ig-card a img {
+    transform: scale(0.5);
+  }
 }
 
 .testimonial-card {
@@ -557,7 +569,14 @@ body {
 
 .preview-content {
   display: grid;
+  transition: all 0.3s linear;
   grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .preview-content {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  }
 }
 
 .preview-item {
@@ -565,6 +584,12 @@ body {
   height: 234px;
   overflow: hidden;
   position: relative;
+}
+
+@media (max-width: 767px) {
+  .preview-item {
+    height: 90px;
+  }
 }
 
 .preview-item img {
@@ -714,17 +739,24 @@ body {
 }
 
 .about-img {
-  width: 100%;
+  float: left;
   height: 380px;
-  overflow: hidden;
-  position: relative;
-  padding-right: 36px;
+  margin-right: 54px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 991px) {
   .about-img {
+    float: none;
     padding: 0px;
-    margin-bottom: 24px;
+    margin: 0px;
+    margin: 24px 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-img {
+    height: 240px;
   }
 }
 
@@ -740,6 +772,17 @@ body {
   max-width: 420px;
   margin-bottom: 25px;
   font-family: "nulshock";
+  position: relative;
+  left: 420px;
+}
+
+@media (max-width: 991px) {
+  .about-info h2 {
+    left: auto;
+    margin: auto;
+    max-width: 100%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 767px) {
@@ -973,12 +1016,33 @@ body {
   font-family: "nulshock";
 }
 
+@media (max-width: 767px) {
+  .banner-content-bottom__info h2 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+}
+
 .banner-content-bottom__info p {
   color: #fff;
   font-size: 16px;
   line-height: 22.2px;
   max-width: 780px;
   margin: auto;
+}
+
+@media (max-width: 767px) {
+  .banner-content-bottom__info p {
+    font-size: 12px;
+    line-height: 16.8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-content-bottom {
+    padding: 30px 0px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1127,6 +1191,7 @@ body {
 .contact ul {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 @media (max-width: 991px) {
@@ -1138,12 +1203,10 @@ body {
 .contact ul li {
   display: flex;
   align-items: center;
-  margin-right: 100px;
 }
 
 @media (max-width: 991px) {
   .contact ul li {
-    margin: 0px;
     margin-bottom: 8px;
   }
 }
@@ -1155,6 +1218,7 @@ body {
 .contact ul li p {
   font-size: 16px;
   line-height: 32px;
+  white-space: nowrap;
   text-transform: capitalize;
 }
 
@@ -1660,9 +1724,21 @@ body {
   position: relative;
 }
 
+@media (max-width: 991px) {
+  .product {
+    padding: 40px 0px;
+  }
+}
+
 .product .heading {
   text-align: center;
   margin-bottom: 80px;
+}
+
+@media (max-width: 767px) {
+  .product .heading {
+    margin-bottom: 24px;
+  }
 }
 
 .product .heading h2 {
@@ -1678,6 +1754,10 @@ body {
   .product .heading p {
     max-width: 100%;
   }
+}
+
+.product-content {
+  align-items: center;
 }
 
 @media (max-width: 991px) {
