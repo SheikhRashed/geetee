@@ -1943,7 +1943,7 @@ body {
   object-fit: contain;
 }
 
-.products .swiper.products-thumb-slider .swiper-slide-active {
+.products .swiper.products-thumb-slider .swiper-slide-thumb-active {
   border-color: #ff0020;
 }
 

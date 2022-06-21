@@ -55,7 +55,7 @@ if (document.querySelector(".products-slider")) {
 		spaceBetween: 10,
 		slidesPerView: 4,
 		freeMode: true,
-		loop: true,
+		loop: false,
 		watchSlidesProgress: true,
 	})
 	var swiper2 = new Swiper(".products-slider", {
@@ -66,6 +66,8 @@ if (document.querySelector(".products-slider")) {
 	})
 }
 
-new VenoBox({
-	selector: ".my-video-links",
-})
+if (document.querySelector(".my-video-links")) {
+	new VenoBox({
+		selector: ".my-video-links",
+	})
+}
