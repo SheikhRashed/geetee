@@ -1,8 +1,13 @@
 .vbox-container {
 	width: 50%;
-	height: 620px;
 	top: 50%;
 	left: 50%;
 	overflow: hidden;
+	height: 620px;
+
 	transform: translate(-50%, -50%);
+
+	@include max(991px) {
+		width: 100%;
+	}
 }
