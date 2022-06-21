@@ -65,3 +65,7 @@ if (document.querySelector(".products-slider")) {
 		},
 	})
 }
+
+new VenoBox({
+	selector: ".my-video-links",
+})
